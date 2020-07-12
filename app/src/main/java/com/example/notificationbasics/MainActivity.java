@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public void startService(View view) {
         Intent intent=new Intent(this,MessageService.class);
         intent.putExtra(MessageService.EXTRA_MESSAGE,getString(R.string.button_resposne));
+
         startService(intent);
     }
 }
